@@ -20,28 +20,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="pje-wa-AG0" userLabel="LifeGrid">
-                                <rect key="frame" x="60" y="35" width="480" height="480"/>
+                                <rect key="frame" x="60" y="36" width="480" height="480"/>
                                 <color key="backgroundColor" red="0.027450980619999999" green="0.95686274770000002" blue="0.90196079019999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="pje-wa-AG0" secondAttribute="height" multiplier="1:1" id="BDP-sQ-0OH"/>
+                                    <constraint firstAttribute="width" secondItem="pje-wa-AG0" secondAttribute="height" multiplier="1:1" id="NRI-X9-Loh"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="pje-wa-AG0" firstAttribute="width" relation="lessThanOrEqual" secondItem="tsR-hK-woN" secondAttribute="width" multiplier="0.8" id="7mh-5P-R44"/>
-                            <constraint firstItem="pje-wa-AG0" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="DRm-ni-RMW"/>
-                            <constraint firstItem="pje-wa-AG0" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" multiplier="0.8" priority="750" id="H9r-eJ-IoO"/>
-                            <constraint firstItem="pje-wa-AG0" firstAttribute="height" relation="lessThanOrEqual" secondItem="tsR-hK-woN" secondAttribute="height" multiplier="0.8" id="XRE-JL-d5p"/>
-                            <constraint firstItem="pje-wa-AG0" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" constant="-25" id="i9u-ZO-Nzg"/>
-                            <constraint firstItem="pje-wa-AG0" firstAttribute="height" secondItem="tsR-hK-woN" secondAttribute="height" multiplier="0.8" priority="750" id="oNU-ff-Y6Z"/>
+                            <constraint firstItem="pje-wa-AG0" firstAttribute="width" relation="lessThanOrEqual" secondItem="tsR-hK-woN" secondAttribute="width" multiplier="0.8" id="NpE-JS-cQY"/>
+                            <constraint firstItem="pje-wa-AG0" firstAttribute="height" relation="lessThanOrEqual" secondItem="tsR-hK-woN" secondAttribute="height" multiplier="0.8" id="OAb-hT-VIc"/>
+                            <constraint firstItem="pje-wa-AG0" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="X1O-rK-JC8"/>
+                            <constraint firstItem="pje-wa-AG0" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" multiplier="0.8" priority="750" id="YAp-Yh-pdi"/>
+                            <constraint firstItem="pje-wa-AG0" firstAttribute="height" secondItem="tsR-hK-woN" secondAttribute="height" multiplier="0.8" priority="750" id="bmX-Js-2Nl"/>
+                            <constraint firstItem="pje-wa-AG0" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" constant="-24" id="onx-DA-nEL"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Simulation" image="first" id="acW-dT-cKf" userLabel="Simulation"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="750" y="-310"/>
         </scene>
         <!-- Instrumentation View Controller-->
         <scene sceneID="wg7-f3-ORb">
