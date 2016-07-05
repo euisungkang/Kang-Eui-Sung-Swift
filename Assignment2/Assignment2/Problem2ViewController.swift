@@ -64,75 +64,14 @@ for(var j = 0; j < 6; ++j)
 after = board
 
 ViewText.text = "There are \(counter) cells alive"
-
-var aftercopy: [Array<Bool>] = []
-var counter2 = 0
-for (var q = 1; q < 6; ++q)
-{
-    for(var w = 1; w < 6; ++w)
-    {
-        while(aftercopy[(q - 1)][(w - 1)] ||
-            aftercopy[(q - 1)][(w + 1)] ||
-            aftercopy[(q)][(w - 1)] ||
-            aftercopy[(q)][(w + 1)] ||
-            aftercopy[(q + 1)][(w)] ||
-            aftercopy[(q + 1)][(w - 1)] ||
-            aftercopy[(q + 1)][(w + 1)] == true)
-        {
-            switch aftercopy
-            {
-            case aftercopy[(q - 1)][w] == true:
-                ++counter2
-                aftercopy[(q - 1)][w] = false
-            case aftercopy[(q - 1)][(w - 1)] == true:
-                ++counter2
-                aftercopy[(q - 1)][(w - 1)] = false
-            case aftercopy[(q - 1)][(w + 1)] == true:
-                ++counter2
-                aftercopy[(q - 1)][(w + 1)] = false
-            case aftercopy[(q)][(w - 1)] == true:
-                ++counter2
-                aftercopy[(q)][(w - 1)] = false
-            case aftercopy[(q)][(w + 1)] == true:
-                ++counter2
-                aftercopy[(q)][(w + 1)] = false
-            case aftercopy[(q + 1)][(w)] == true:
-                ++counter2
-                aftercopy[(q + 1)][(w)] = false
-            case aftercopy[(q + 1)][(w - 1)] == true:
-                ++counter2
-                aftercopy[(q + 1)][(w - 1)] = false
-            case aftercopy[(q + 1)][(w + 1)] == true:
-                ++counter2
-                aftercopy[(q + 1)][(w + 1)] = false
-            }
-        }
-
-        }
-        aftercopy[(q - 1)][w]
-    
-                  switch aftercopy[q][w]
- 
-        
     }
-}
-
-
-
-
-
-
-
-
-
-
 
  override func viewDidLoad() {
  super.viewDidLoad()}
  override func didReceiveMemoryWarning() {
  super.didReceiveMemoryWarning()}
  
- 
+}
  /*
  // MARK: - Navigation
  
