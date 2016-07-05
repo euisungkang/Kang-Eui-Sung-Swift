@@ -63,7 +63,7 @@ for(var j = 0; j < 6; ++j)
 }
 after = board
 
-//ViewText.text = "There are \(counter) cells alive"
+ViewText.text = "There are \(counter) cells alive"
 
 var aftercopy: [Array<Bool>] = []
 var counter2 = 0
