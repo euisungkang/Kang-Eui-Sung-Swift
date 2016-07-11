@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Assignment2
+//  Assignment3
 //
-//  Created by Eui Sung Kang on 6/29/16.
+//  Created by Eui Sung Kang on 7/10/16.
 //  Copyright © 2016 Kang, Eui Sung. All rights reserved.
 //
 

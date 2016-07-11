@@ -1,14 +1,14 @@
 //
-//  MainController.swift
-//  Assignment2
+//  ViewController.swift
+//  Assignment3
 //
-//  Created by Eui Sung Kang on 6/29/16.
+//  Created by Eui Sung Kang on 7/10/16.
 //  Copyright © 2016 Kang, Eui Sung. All rights reserved.
 //
 
 import UIKit
 
-class MainController: UIViewController {
+class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,5 +19,7 @@ class MainController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+
 }
 
