@@ -5,19 +5,19 @@
 //  Created by Eui Sung Kang on 7/10/16.
 //  Copyright © 2016 Kang, Eui Sung. All rights reserved.
 //
-
+import Foundation
 import UIKit
-
 @IBDesignable
 
-
-class GridView: UIViewController
+class GridView: UIView
 {
-    override func viewDidLoad() {
-        super.viewDidLoad()}
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()}
-
+    @IBInspectable var rows = 20
+    @IBInspectable var cols = 20
+    @IBInspectable var livingColor = UIColor.blueColor()
+    @IBInspectable var emptyColor = UIColor.greenColor()
+    @IBInspectable var diedColor = UIColor.redColor()
+    @IBInspectable var gridColor = UIColor.blackColor()
+    @IBInspectable var gridWidth: CGFloat = 2.0
     
     enum CellState:String
     {
@@ -59,54 +59,41 @@ class GridView: UIViewController
             }
         }
     }
-    var test = CellState.Living.rawreturn()
-    @IBInspectable var rows = 20
-    @IBInspectable var cols = 20
-    @IBInspectable var livingColor = UIColor.blueColor()
-    @IBInspectable var emptyColor = UIColor.greenColor()
-    @IBInspectable var diedColor = UIColor.redColor()
-    @IBInspectable var gridColor = UIColor.blackColor()
-    @IBInspectable var gridWidth: CGFloat
+
     
-    var grid: [Array<CellState>]
+    var grid: [[CellState]]
     var grid2: [CellState]
     var didSet:Bool
-    init()
+    func generate()
     {
-        func generate()
-        {
-        for _ in 0..<rows
-        {
-            for i in 0..<cols
-            {
-                grid2[i] = .Empty
+        for x in 0...rows{
+            for y in 0...cols{
+                grid[x][y] = CellState.Empty
             }
-            grid.append(grid2)
-        }
-        }
-        
-        for _ in 0..<rows
-        {
-            for i in 0..<cols
-            {
-                if (grid2[i] != .Empty)
-                {
-                    while(grid2[i] != .Empty)
-                    {
-                        generate()
-                    }
-                }
-            }
-            grid.append(grid2)
         }
     }
     
-    override func drawRect(rect: CGRect)
-    {
-        let path = UIBezierPath(rect: rect)
-        livingColor.setFill()
-        path.fill()
-    }
+        func drawLines(rect: CGRect)
+        {
+            let plusWidth: CGFloat = min(bounds.width, bounds.height)
+            var pluspath = UIBezierPath()
+            pluspath.lineWidth = gridWidth
+            //for x in 0...20
+            //{
+            //  for y in 0...20
+            //{
+            pluspath.addLineToPoint(CGPoint(
+                x:bounds.width,
+                y:bounds.height/2))
+            pluspath.addLineToPoint(CGPoint(
+                x:bounds.width - bounds.width,
+                y:bounds.height/2))
+            
+            //}
+            //}
+            UIColor.blueColor().setStroke()
+            pluspath.stroke()
+        }
 }
 
 
